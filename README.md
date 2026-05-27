@@ -1,83 +1,26 @@
 # Prompt Evaluation Case Studies
 
-A portfolio repository for AI output evaluation, prompt quality, localization review, and practical quality assurance.
+Python examples for scoring AI outputs with rubrics, localization checks, and prompt quality rules.
 
-## Target roles this supports
+## Features
 
-- AI response evaluator
-- Turkish language evaluator
-- Localization QA reviewer
-- Prompt evaluation specialist
-- Junior AI operations / AI data quality roles
+- Simple weighted scoring rubric
+- Issue detection for clarity, completeness, and localization
+- Example JSON case studies
+- CLI for quick evaluation experiments
 
-## Evaluation rubric
+## Run locally
 
-When reviewing an AI answer, I check:
-
-1. Instruction following
-2. Factual accuracy
-3. Completeness
-4. Clarity and structure
-5. Tone and audience fit
-6. Safety and policy issues
-7. Localization quality, if relevant
-
-## Example: Turkish localization review
-
-Checklist:
-
-- Is the Turkish natural, not machine-translated?
-- Are formal/informal tone choices consistent?
-- Are idioms translated meaningfully, not literally?
-- Are dates, currencies, names, and local context handled correctly?
-- Is the response useful for a Turkish-speaking user?
-
-## Example: Prompt improvement process
-
-Before:
-
-```text
-Write about AI agents.
+```bash
+python3 -m prompt_eval.cli examples/turkish_localization_case.json
 ```
 
-Problem:
+## Evaluation dimensions
 
-- Too broad
-- No audience
-- No output format
-- No quality criteria
-
-Improved:
-
-```text
-Explain AI agents to a non-technical recruiter in 5 bullet points. Focus on practical business use cases, avoid hype, and include one limitation.
-```
-
-Why better:
-
-- Clear audience
-- Clear structure
-- Clear tone
-- Includes constraint against overclaiming
-
-## Example: AI answer review template
-
-```md
-## Score
-7/10
-
-## Strengths
-- Clear structure
-- Mostly answers the question
-
-## Issues
-- Missing concrete example
-- Slightly too generic
-
-## Suggested correction
-Add one realistic use case and mention a limitation.
-```
-
-## Portfolio note
-
-This repository is designed to demonstrate evaluation thinking and communication clarity for recruiter review.
+- Instruction following
+- Factual accuracy
+- Completeness
+- Clarity
+- Tone fit
+- Safety
+- Localization quality
