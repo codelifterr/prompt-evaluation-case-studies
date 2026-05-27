@@ -1,0 +1,23 @@
+{
+  "localized_text": "Merhaba, bu araç iş akışınızı daha hızlı ve düzenli hale getirebilir.",
+  "rubric": [
+    {
+      "name": "instruction_following",
+      "weight": 1.0,
+      "score": 8,
+      "note": "Answers the requested task."
+    },
+    {
+      "name": "localization_quality",
+      "weight": 1.5,
+      "score": 8,
+      "note": "Natural Turkish with clear wording."
+    },
+    {
+      "name": "completeness",
+      "weight": 1.0,
+      "score": 6,
+      "note": "Could include one more concrete example."
+    }
+  ]
+}
