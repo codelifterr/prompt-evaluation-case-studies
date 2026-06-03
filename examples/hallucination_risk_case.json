@@ -1,0 +1,11 @@
+{
+  "case_id": "hallucination-risk-001",
+  "prompt": "Summarize a company announcement and identify claims that need source verification.",
+  "candidate_response": "The response summarizes the announcement but adds a revenue number not present in the supplied text.",
+  "rubric": [
+    {"name": "Grounded in source", "weight": 4, "score": 5, "note": "One numerical claim is not supported by the source text"},
+    {"name": "Completeness", "weight": 2, "score": 8, "note": "Covers the main announcement points"},
+    {"name": "Clarity", "weight": 2, "score": 8, "note": "Clear structure and readable wording"},
+    {"name": "Risk awareness", "weight": 2, "score": 6, "note": "Needs a clearer caveat for unsupported claims"}
+  ]
+}

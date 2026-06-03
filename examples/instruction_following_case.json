@@ -1,0 +1,11 @@
+{
+  "case_id": "instruction-following-001",
+  "prompt": "Reply in English, use exactly three bullet points, and include one suggested next action.",
+  "candidate_response": "The response uses three bullets but adds an extra paragraph after the list.",
+  "rubric": [
+    {"name": "Format compliance", "weight": 3, "score": 6, "note": "Adds extra prose after the requested three bullets"},
+    {"name": "Language compliance", "weight": 2, "score": 10, "note": "Uses English as requested"},
+    {"name": "Task completion", "weight": 3, "score": 8, "note": "Includes a useful next action"},
+    {"name": "Conciseness", "weight": 2, "score": 7, "note": "Mostly concise but could avoid the extra paragraph"}
+  ]
+}
